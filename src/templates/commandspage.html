@@ -1,0 +1,303 @@
+{% extends "layout.html" %}
+{% block title %}CavenBot - Commands{% endblock %}
+{% block page_content %}
+<h1>Commands</h1>
+<div id="help">
+	<h2>Help Commands</h2>
+	<p>
+		These commands will help you get started with the bot
+	</p>
+	<h3>m?help and anon help</h3>
+	<p>
+		Gives a list of commands included with this prefix
+	</p>
+</div>
+<div id="JDA">
+	<h2>JDA Commands</h2>
+	<p>
+		Commands all hosted on the JDA version of the bot. Listed in alphabetical order by Category
+	</p>
+	<div id="Actions">
+		<h2>Action Commands</h2>
+		<h3>m?beers</h3>
+		<p>
+			Sends an embed with a gif of cheers
+		</p>
+		<h3>m?beg</h3>
+		<p>
+			Sends a random gif of someone begging
+		</p>
+		<h3>m?bite</h3>
+		<p>
+			Sends an embed with a gif of someone being bitten
+		</p>
+		<h3>m?cake</h3>
+		<p>
+			Sends a random gif of cake
+		</p>
+		<h3>m?cookie</h3>
+		<p>
+			Gives a cookie to someone
+		</p>
+		<h3>m?cuddle</h3>
+		<p>
+			Sends a random gif of someone being cuddled
+		</p>
+		<h3>m?gif</h3>
+		<p>
+			Finds a random gif with the given search term
+		</p>
+		<h3>m?glare</h3>
+		<p>
+			Sends a random gif of someone glaring
+		</p>
+		<h3>m?highfive</h3>
+		<p>
+			Sends a random gif of a high five
+		</p>
+		<h3>m?hug</h3>
+		<p>
+			Sends a random gif of someone being hugged
+		</p>
+		<h3>m?kiss</h3>
+		<p>
+			Sends a random gif of someone being kissed
+		</p>
+		<h3>m?lick</h3>
+		<p>
+			Sends a random gif of someone being licked
+		</p>
+		<h3>m?pat</h3>
+		<p>
+			Sends a random gif of someone being pat
+		</p>
+		<h3>m?poke</h3>
+		<p>
+			Sends a random gif of someone being poked
+		</p>
+		<h3>m?punch</h3>
+		<p>
+			Sends a random gif of someone being punched
+		</p>
+		<h3>m?sass</h3>
+		<p>
+			Sends a random gif of someone being sassy
+		</p>
+		<h3>m?shank</h3>
+		<p>
+			Sends a random gif of someone being stabbed
+		</p>
+		<h3>m?slap</h3>
+		<p>
+			Sends a random gif of someone being slapped
+		</p>
+	</div>
+	<div id="Destiny">
+		<h2>Destiny Commands</h2>
+		<h3>m?destiny1</h3>
+		<h4>xur</h4>
+		<p>
+			Gets the current inventory of Xur. Only gets his inventory on Friday to Monday
+		</p>
+	</div>
+	<div id="Misc">
+		<h2>Misc Commands</h2>
+		<h3>m?general kenobi</h3>
+		<p>
+			Sends a gif from Star Wars
+		</p>
+		<h3>m?guilds</h3>
+		<p>
+			Gives the number of the servers the bot is in
+		</p>
+		<h3>m?hello there</h3>
+		<p>
+			Sends a gif from Star Wars
+		</p>
+		<h3>m?invite</h3>
+		<p>
+			DMs an embed with the invite link for the bot
+		</p>
+		<h3>m?meme</h3>
+		<p>
+			Sends an embed with a random meme on it.
+		</p>
+		<h3>m?nani</h3>
+		<p>
+			Sends an anime joke response
+		</p>
+		<h3>m?omae</h3>
+		<p>
+			Sends an embed with an anime joke
+		</p>
+		<h3>m?pfp</h3>
+		<p>
+			Gets the url for your current profile picture
+		</p>
+		<h3>m?ping</h3>
+		<p>
+			Gets the ping for the bot.
+		</p>
+		<h3>m?remind</h3>
+		<h4>add</h4>
+		<p>
+			Adds a reminder to the list of reminders for the user
+		</p>
+		<h4>remove</h4>
+		<p>
+			Removes a reminder from the list of reminders for the user
+		</p>
+		<h4>view</h4>
+		<p>
+			Sends an embed with a list of the user's reminders within that server.
+		</p>
+		<h3>m?support</h3>
+		<p>
+			Sends an embed with the invite link to the official support server
+		</p>
+		<h3>m?uptime</h3>
+		<p>
+			Gets the uptime for the bot.
+		</p>
+	</div>
+	<div id="Moderation">
+		<h2>Moderation Commands</h2>
+		<h3>m?ban</h3>
+		<p>
+			Bans the given user, with the optional reason being appended
+		</p>
+		<h3>m?channel</h3>
+		<p>
+			Sets the audit channel to whatever channel you pass in here
+		</p>
+		<h3>m?clear</h3>
+		<p>
+			Clears the amount of messages you pass in. The default value is 100
+		</p>
+		<h3>m?editWelcome</h3>
+		<p>
+			Edits the welcome message on the embed send when a member joins the server
+		</p>
+		<h3>m?kick</h3>
+		<p>
+			Kicks the given user
+		</p>
+		<h3>m?info</h3>
+		<p>
+			Gives relevant info about the server.
+		</p>
+		<h3>m?settings</h3>
+		<p>
+			Command to toggle audit and welcome messages in the guild. You need this enabled and the channel to be defined for logging
+			to work
+		</p>
+		<h3>m?unban</h3>
+		<p>
+			Unbans the given user
+		</p>
+		<h3>m?voiceready</h3>
+		<p>
+			Toggles whether to send a startup message in the specified server. It requires an audit channel to be defined to work
+		</p>
+		<h3>m?welcome</h3>
+		<p>
+			Sets the channel to direct welcome messages to the channel you pass in
+		</p>
+	</div>
+	<div id="Music">
+		<h2>Music Commands</h2>
+		<h3>m?join</h3>
+		<p>
+			Makes the bot join the voice channel you are in
+		</p>
+		<h3>m?leave</h3>
+		<p>
+			Makes the bot leave the voice channel you are in
+		</p>
+		<h3>m?nowplaying</h3>
+		<p>
+			Says the currently playing song
+		</p>
+		<h3>m?pause</h3>
+		<p>
+			Makes the bot pause the currently playing music/video.
+		</p>
+		<h3>m?play</h3>
+		<p>
+			Makes the bot play the video given. It has voice channel join redundancy
+		</p>
+		<h3>m?queue</h3>
+		<p>
+			Sends an embed of the current queue. If it's longer than 20 songs, then it will only display that much and give the current
+			number of songs in queue
+		</p>
+		<h3>m?resume</h3>
+		<p>
+			Makes the bot resume playing the current song
+		</p>
+		<h3>m?skip</h3>
+		<p>
+			Skips the currently playing song
+		</p>
+		<h3>m?stop</h3>
+		<p>
+			Stops all music and clears the queue
+		</p>
+	</div>
+	<div id="roles">
+		<h2>Role Commands</h2>
+		<h3>m?joinrole</h3>
+		<p>
+			Sets the role to look add to newly joined members, and enables it. Using this with no role will disable it.
+		</p>
+		<h3>m?rolereact</h3>
+		<p>
+			Main command for role reactions
+		</p>
+		<h4>add</h4>
+		<p>
+			Adds a new reaction to listen for automatically adding roles to members
+		</p>
+		<h4>dm</h4>
+		<p>
+			Toggles the dm message settings for role add/remove success.
+		</p>
+		<h4>remove</h4>
+		<p>
+			Removes the reaction from the message, and also stops adding the role to members who choose the reaction
+		</p>
+		<h4>toggle</h4>
+		<p>
+			Sets the roles for the message to toggle on another reaction addition. It automatically removes the old reaction(s)
+		</p>
+	</div>
+</div>
+<div id="Anon">
+	<h2>DM Commands</h2>
+	<p>
+		Commands that require you to DM the bot to trigger
+	</p>
+	<h3>anon send</h3>
+	<p>
+		Sends an anonymous message in the channel specified. Obviously the bot needs to be in the server for it to work.
+	</p>
+</div>
+<div id="NSFW">
+	<h2>NSFW Commands</h2>
+	<p>
+		Because what bot wouldn't be complete without a few of these?
+	</p>
+	<h3>m?toy</h3>
+	<p>
+		Chooses a toy for you to play with. Have fun
+	</p>
+	<h3>m?dom or m?sub</h3>
+	<p>
+		Says if you're a dom or a sub. Feeling up for some fun?
+	</p>
+	<h3>m?punish</h3>
+	<p>
+		Gives a random "punishment" for the person specified. If no one is specified it defaults to the person who invokes the command
+	</p>
+</div>
+{% endblock %}
